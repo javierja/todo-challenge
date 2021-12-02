@@ -10,7 +10,7 @@ Cuenta con la autenticación por JWT para brindar las validaciones y seguridad a
 Para poder correr la app se necesitara lo siguiente
 
 - [x] Python -> https://www.python.org/downloads/
-- [x] Django > python -m pip install Django
+- [x] Django -> {python -m pip install Django}
 - [x] Django Rest Framework // This is done
 - [x] Simple JWT
 - [x] Corsheaders

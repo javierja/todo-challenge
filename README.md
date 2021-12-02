@@ -15,6 +15,8 @@ Para poder correr la app se necesitara lo siguiente
 - [x] Simple JWT
 - [x] Corsheaders
 
+[r2h]: http://github.com/github/markup/tree/master/lib/github/commands/rest2html
+
 
 
 

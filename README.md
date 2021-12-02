@@ -1,4 +1,4 @@
-<div align="center">
+<div>
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
@@ -36,12 +36,14 @@ http://127.0.0.1:8000/users/users/
    
 Allí debera enviar la petición por metodo POST con los datos (json) requeridos para crear un nuevo usuario, por ejemplo:
    
- {
-        "username": "juanp",
+{
+  
+        "username": "juan",
         "name": "Juan",
         "last_name": "Perez",
         "email": "juanperez@gmail.com",
         "password": "1234567"
+  
 }
    
 - Una vez creado el usuario ya podra loguearse en el sistema para poder ingresar a manejar las tareas.
@@ -65,15 +67,38 @@ Allí debera enviar la petición por metodo POST con los datos (json) del usuari
    
 #### Obtención del JWT
 
-Al loguearse la app devolverá un daccionario con los datos del usuario que se acaba de loguear en los cuales le proporcionara el token de autenticación que debera usar para poder hacer uso de las otra funcionalidades. Ese JWT deberá ser copiado y colocado en nuestro cliente HTTP (ej: postman, thunder client) a traves de tipo de autenticacion BEARER
-   
+Al loguearse la app devolverá un daccionario con los datos del usuario que se acaba de loguear en los cuales le proporcionara el token de autenticación que debera usar para poder hacer uso de las otra funcionalidades. Ese JWT deberá ser copiado y colocado en nuestro cliente HTTP (ej: postman, thunder client) a traves del tipo de autenticación BEARER
+
 {
-    "message": "Logueado Correctamente",
-    "jwt": `"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM4NDc2NTI3LCJqdGkiOiI5NWE2MzNjZDkyMTA0NDBjOTlkMDM1YjFhYjkwMzEzYiIsInVzZXJfaWQiOjF9.MT6VrRI28SzVt8Y88mwGLyQ4C-en93M6ict5F8AUnLc"`,
-    "user_id": 1
+   
+        "message": "Logueado Correctamente",
+        "jwt": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM4NDc2NTI3LCJqdGkiOiI5NWE2MzNjZDkyMTA0NDBjOTlkMDM1YjFhYjkwMzEzYiIsInVzZXJfaWQiOjF9.MT6VrRI28SzVt8Y88mwGLyQ4C-en93M6ict5F8AUnLc",
+        "user_id": 1
+        
 }
 
+### Task (Tareas)
 
+Para manipular las tareas (crear, ver, actualizar etc) deberemos ingresat a la siguente url:
+  
+http://127.0.0.1:8000/tasks/tasks/
+  
+#### Crear Tarea
+  
+Se deberan pasar por POST los siguientes datos, ej:
+  
+#### Editar Tarea
 
+Se deberan pasar por PUT los datos a actualizar, ej:
+  
+#### Borrar Tarea
+
+Se deberan realizar la petición DELETE con id de la tarea:
+  
+
+  
+
+  
+  
 
 

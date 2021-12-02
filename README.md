@@ -12,10 +12,11 @@ Para poder correr la app se necesitara lo siguiente
 - [x] Python -> https://www.python.org/downloads/
 - [x] Django -> {python -m pip install Django}
 - [x] Django Rest Framework // This is done
-- [x] Simple JWT
+- [x] Simple JWT   ```sh
+   npm install
+   ```
 - [x] Corsheaders
 
-[r2h]: http://github.com/github/markup/tree/master/lib/github/commands/rest2html
 
 
 

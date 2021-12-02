@@ -1,7 +1,4 @@
-<div>
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+
 # TaskApp
 
 Esta app permite el manejo de tareas y gestion de usuarios que tienen acceso a la misma, desde el lado del backend. 

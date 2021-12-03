@@ -83,15 +83,86 @@ http://127.0.0.1:8000/tasks/tasks/
 #### Crear Tarea
   
 Se deberan pasar por POST los siguientes datos, ej:
+
+{
+     "titulo": "Tarea Uno",
+     "descripcion": "Esta es la tarea Uno. Saludos.",
+     "completada": true
+}
+*Debera ingresar con las credenciales de autenticación (token)
   
 #### Editar Tarea
 
 Se deberan pasar por PUT los datos a actualizar, ej:
-  
+http://127.0.0.1:8000/tasks/tasks/1
+
+{
+     "titulo": "Tarea Uno Editada",
+     "descripcion": "Esta es la tarea Uno. Saludos.",
+     "completada": false
+}
+
+*Se puede enviar solo uno de los campos (keys)
+
 #### Borrar Tarea
 
-Se deberan realizar la petición DELETE con id de la tarea:
+http://127.0.0.1:8000/tasks/tasks/2
+
+Se deberan realizar la petición DELETE con id de la tarea.
+
+
+### Listar todas las tareas
+
+Para visualizar todas las tareas deberemos ingresat a la siguente url:
   
+http://127.0.0.1:8000/tasks/tasks/
+
+*Debera ingresar con las credenciales de autenticación (token)
+
+### Busqueda por filtros
+
+Para poder realizar una busqueda por filtro debera ingresar a la siguente url y luego colocar segun el filtro de busqueda la información o dejar en blanco ("")
+
+http://127.0.0.1:8000/tasks-search/
+
+Por fecha, colocar ej:
+
+{
+     "fecha":"2021-12-02",
+     "descripcion":"",
+     "user":""
+}
+
+*respetar el formato de la fecha
+
+Por contenido, colocar ej:
+
+{
+     "fecha":"",
+     "descripcion":"tarea",
+     "user":""
+}
+
+Por usuario, colocar nombre de usuario ej:
+
+{
+     "fecha":"",
+     "descripcion":"",
+     "user":"juan"
+}
+
+### Listar tareas completadas
+
+Simplemente debera ingresar a la siguiente url con los permisos de autenticacion:
+
+http://127.0.0.1:8000/completed-list/
+
+
+## GRACIAS
+javierjaldo@gmail.com
+
+
+
 
   
 

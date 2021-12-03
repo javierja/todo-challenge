@@ -85,9 +85,11 @@ http://127.0.0.1:8000/tasks/tasks/
 Se deberan pasar por POST los siguientes datos, ej:
 
 {
-     "titulo": "Tarea Uno",
-     "descripcion": "Esta es la tarea Uno. Saludos.",
-     "completada": true
+
+        "titulo": "Tarea Uno",
+        "descripcion": "Esta es la tarea Uno. Saludos.",
+        "completada": true
+     
 }
 *Debera ingresar con las credenciales de autenticación (token)
   
@@ -128,9 +130,11 @@ http://127.0.0.1:8000/tasks-search/
 Por fecha, colocar ej:
 
 {
-     "fecha":"2021-12-02",
-     "descripcion":"",
-     "user":""
+   
+        "fecha":"2021-12-02",
+        "descripcion":"",
+        "user":""
+        
 }
 
 *respetar el formato de la fecha
@@ -138,17 +142,21 @@ Por fecha, colocar ej:
 Por contenido, colocar ej:
 
 {
-     "fecha":"",
-     "descripcion":"tarea",
-     "user":""
+
+        "fecha":"",
+        "descripcion":"tarea",
+        "user":""
+        
 }
 
 Por usuario, colocar nombre de usuario ej:
 
 {
-     "fecha":"",
-     "descripcion":"",
-     "user":"juan"
+
+        "fecha":"",
+        "descripcion":"",
+        "user":"juan"
+        
 }
 
 ### Listar tareas completadas

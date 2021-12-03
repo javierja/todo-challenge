@@ -167,6 +167,9 @@ Simplemente debera ingresar a la siguiente url con los permisos de autenticacion
 
 http://127.0.0.1:8000/completed-list/
 
+### Importante
+
+El proyecto trabaja con la db de sqlite que esta en el proyecto y configurada como tal.
 
 ## GRACIAS
 javierjaldo@gmail.com

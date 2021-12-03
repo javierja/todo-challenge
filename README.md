@@ -99,9 +99,11 @@ Se deberan pasar por PUT los datos a actualizar, ej:
 http://127.0.0.1:8000/tasks/tasks/1
 
 {
-     "titulo": "Tarea Uno Editada",
-     "descripcion": "Esta es la tarea Uno. Saludos.",
-     "completada": false
+
+        "titulo": "Tarea Uno Editada",
+        "descripcion": "Esta es la tarea Uno. Saludos.",
+        "completada": false
+     
 }
 
 *Se puede enviar solo uno de los campos (keys)
